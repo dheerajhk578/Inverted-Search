@@ -1,0 +1,81 @@
+/*-----------------DOCUMENTATION-----------------------------------------------
+
+Name          : Dheeraj H K
+Starting date : 20/02/2026
+Ending date   : 01/02/2026
+
+Description:
+
+This project is an Inverted Search system implemented in C for Linux operating
+systems. The Inverted Search project is designed to efficiently search for
+words across multiple text files using data structures like Hash Tables and
+Linked Lists.
+
+In this project, an inverted index is created where each word is mapped to the
+files in which it appears along with the number of occurrences in each file.
+Instead of scanning files repeatedly during search, the program builds a
+database in advance, making the searching process faster and more efficient.
+
+The Inverted Search allows the user to:
+
+Create a database from multiple input text files
+Display the complete indexed database
+Search for a particular word
+Save the database into a file
+Update (restore) the database from a saved file
+Exit the program safely
+
+The project is developed using C programming language and demonstrates
+the following concepts:
+
+File handling (fopen, fscanf, fprintf, fclose)
+Hash table implementation (size 26 for alphabets a–z)
+Singly linked list implementation (Main node & Sub node)
+Dynamic memory allocation (malloc, free)
+String manipulation functions
+Efficient searching techniques
+
+Sample Input and Output:
+
+Execution
+
+Input:
+
+./inverted file1.txt file2.txt file3.txt
+
+
+Output:
+
+===============================START===================================
+
+1. Create Database
+2. Display Database
+3. Search
+4. Save Database
+5. Update Database
+6. Exit
+
+Enter your choice: 1
+INFO : Database created successfully
+
+Enter your choice: 2
+Index  Word     Filecount   Filename     Wordcount
+---------------------------------------------------
+7      hello    2           file1.txt    3
+                             file2.txt    5
+
+Enter your choice: 3
+Enter the word to search: hello
+INFO : Word found
+File : file1.txt  -> Count : 3
+File : file2.txt  -> Count : 5
+
+Enter your choice: 4
+INFO : Database saved successfully
+
+Enter your choice: 6
+INFO : Exiting Inverted Search
+
+================================END====================================
+
+------------------------------------------------------------------------------*/
